@@ -310,6 +310,7 @@ footer p {
     margin: 0 0 20px; /* Espaciado debajo del párrafo */
     font-size: 1.2em; /* Tamaño de fuente más grande */
     font-family: "Montserrat", sans-serif;
+    text-align: center;
 }
 
 footer a {
@@ -397,8 +398,8 @@ footer img:hover, footer img:focus {
 
     .barra-nav p {
         text-align: justify;       
-        text-shadow: 3px 3px 6px rgba(235, 229, 229, 0.8);
-        color: #FFFFFF;
+        text-shadow: 5px 5px 10px rgba(235, 229, 229, 0.8);
+        color: rgb(146, 146, 173);
         
     }
 
@@ -503,6 +504,11 @@ section .titulo2{
     
 }
 
+footer p{
+
+    text-align: center;
+}
+
 
 
 
@@ -527,6 +533,7 @@ section .titulo2{
 
     .barra-nav p{
         text-align: center;
+        
     }
 
     .main1 img{
