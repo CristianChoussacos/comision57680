@@ -1,0 +1,38 @@
+@media (max-width: 1024px) {
+
+    body{
+        background-color:aliceblue;
+
+    }
+
+    .main1 {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,auto); 
+        font-size: 20px;
+        transition: color 0.3s ease, text-shadow 0.3s ease; 
+        text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1); 
+        margin-top: 100px;
+    }
+
+
+    .main1 div img {
+        width: 400px;
+        height: 400px;
+    }
+    
+    .main1 article {
+        margin-bottom: 100px;
+    }
+    
+    .main2 div img {
+        width: 80%;
+        height: auto;
+    }
+    
+    .main2 .p1,
+    .main2 .p2,
+    .main2 .p3 {
+        font-size: 20px;
+    }
+}
