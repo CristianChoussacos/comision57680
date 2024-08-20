@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center; }
+
+footer section {
+  margin-bottom: 20px; }
+
+footer p {
+  margin: 0 0 20px;
+  font-size: 1.2em;
+  font-family: "Montserrat", sans-serif;
+  text-align: center; }
+
+footer a {
+  margin: 0 10px;
+  text-decoration: none; }
+
+footer button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0; }
+
+footer img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease; }
+
+footer img:hover, footer img:focus {
+  transform: scale(1.1); }
+
+header a {
+  text-decoration: none; }
+
+body header h1 {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-family: "Love Ya Like A Sister", cursive;
+  font-size: 60px;
+  color: #FFFFFF;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+  margin: 0 auto;
+  width: auto;
+  border-radius: 10px; }
+
+.main1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 100px; }
+
+.main1 img {
+  grid-column: 2;
+  grid-row: 1/2;
+  width: 400px;
+  height: 400px;
+  margin-left: 20px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 200px; }
+
+.main1 article {
+  grid-column: 1;
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  margin-left: 40px; }
+
+.main2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto); }
+
+.main2 .p1,
+.main2 .p2,
+.main2 .p3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1); }
+
+.main2 .img1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  width: 100%;
+  height: auto;
+  margin-top: 15%;
+  margin-left: 30px; }
+
+.main2 .p1 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px; }
+
+.main2 .img2 {
+  grid-column: 2/3;
+  grid-row: 2/3; }
+
+.main2 .p2 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px; }
+
+.main2 .img3 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 200px; }
+
+.main2 .p3 {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: start;
+  margin-right: 30px; }
+
+.grid-einstein,
+.grid-fleming,
+.grid-galileo,
+.grid-verne {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 100px; }
+
+.grid-einstein img,
+.grid-fleming img,
+.grid-galileo img,
+.grid-verne img {
+  width: 400px;
+  height: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-left: 30px;
+  border-radius: 15px; }
+
+.grid-einstein article,
+.grid-fleming article,
+.grid-galileo article,
+.grid-verne article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  margin: 0 30px; }
+
+section .titulo1,
+section .titulo2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  margin-bottom: 50px;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1); }
+
+section .titulo1 h2 {
+  text-align: center;
+  margin-top: 300px; }
+
+section .titulo2 {
+  margin-top: 50px;
+  margin-left: 30px; }
+
+section p,
+section article,
+section h3,
+section ol li {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  text-align: justify;
+  margin-left: 30px;
+  margin-right: 30px;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  margin-top: 20px; }
+
+nav {
+  padding: 20px;
+  margin-top: 50px; }
+
+nav img {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, opacity 0.3s ease; }
+
+nav img:hover {
+  transform: scale(1.5); }
+
+.section1 {
+  background-color: #55476A; }
+
+.section2 {
+  background-color: #F2CA7E; }
+
+@media (max-width: 320px) {
+  body header h1 {
+    font-size: 20px; }
+  .barra-nav img {
+    width: 80px;
+    height: auto;
+    align-content: center;
+    margin-top: 5px; }
+  .barra-nav p {
+    text-align: center; }
+  .main1 img {
+    width: 200px !important;
+    height: 200px !important;
+    margin-bottom: 25px;
+    margin-left: 15%; }
+  .main1 article {
+    text-align: center; }
+  footer p {
+    font-size: 1em;
+    text-align: center; } }
+
+@media (max-width: 426px) {
+  body header h1 {
+    font-size: 30px; }
+  .barra-nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    background-color: transparent;
+    justify-items: center; }
+  .barra-nav button {
+    background-color: transparent; }
+  .barra-nav p {
+    text-align: justify;
+    text-shadow: 5px 5px 10px rgba(235, 229, 229, 0.8);
+    color: #9292ad; }
+  .main1 {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: justify;
+    font-size: 16px; }
+  .main1 img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px !important;
+    height: 300px !important;
+    margin-bottom: 50px;
+    margin-left: 15%; }
+  .main1 article {
+    grid-column: 1;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    margin-left: 40px;
+    margin-right: 40px; }
+  .main2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+  .main2 .p1,
+  .main2 .p2,
+  .main2 .p3 {
+    margin-left: 30px;
+    font-size: 16px; }
+  .main2 .img1 {
+    width: 100%;
+    height: auto;
+    margin-top: 15%;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; }
+  .main2 .img2 {
+    width: 100%;
+    height: auto;
+    margin-top: 15%;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: justify; }
+  .main2 .img3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: justify;
+    margin-top: 100px;
+    margin-bottom: 20px; }
+  .main2 .p1,
+  .main2 .p2,
+  .main2 .p3 {
+    margin-top: 20px;
+    margin-bottom: 50px; }
+  .grid-einstein,
+  .grid-fleming,
+  .grid-galileo,
+  .grid-verne {
+    font-size: 16px; }
+  section .titulo1,
+  section .titulo2 {
+    font-size: 16px; }
+  footer p {
+    text-align: center; } }
+
+@media (max-width: 768px) {
+  .grid-einstein,
+  .grid-fleming,
+  .grid-galileo,
+  .grid-verne {
+    font-size: 20px;
+    flex-direction: column; }
+  .grid-einstein img,
+  .grid-fleming img,
+  .grid-galileo img,
+  .grid-verne img {
+    width: 300px;
+    height: 300px;
+    margin-top: 100px;
+    border-radius: 15px; }
+  section .titulo1 h2 {
+    text-align: center;
+    margin-top: 200px; }
+  section .titulo2 {
+    margin-top: 50px;
+    margin-left: 30px; }
+  section p,
+  section article,
+  section h3,
+  section ol li {
+    font-size: 18px; } }
+
+@media (max-width: 1024px) {
+  body {
+    background-color: aliceblue; }
+  .main1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    font-size: 20px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 100px; }
+  .main1 div img {
+    width: 400px;
+    height: 400px; }
+  .main1 article {
+    margin-bottom: 100px; }
+  .main2 div img {
+    width: 80%;
+    height: auto; }
+  .main2 .p1,
+  .main2 .p2,
+  .main2 .p3 {
+    font-size: 20px; } }
