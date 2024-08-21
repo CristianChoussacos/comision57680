@@ -1,40 +1,37 @@
+
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  
-    section {
-      margin-bottom: 20px;
-    }
-  
-    p {
-      margin: 0 0 20px;
-      font-size: 1.2em;
-      font-family: "Montserrat", sans-serif;
-      text-align: center;
-    }
-  
-    a {
-      margin: 0 10px;
-      text-decoration: none;
-    }
-  
-    button {
-      background: none;
-      border: none;
-      cursor: pointer;
-      padding: 0;
-    }
-  
-    img {
-      width: 40px;
-      height: 40px;
-      transition: transform 0.3s ease;
-  
-      &:hover, &:focus {
-        transform: scale(1.1);
-      }
-    }
+  background-color: $background-color;
+  color: $text-color;
+  padding: $padding;
+  text-align: center;
+
+  section {
+    margin-bottom: $padding;
   }
-  
+
+  p {
+    margin: 0 0 $padding;
+    font-size: $font-size;
+    font-family: $font-family;
+    text-align: center;
+  }
+
+  a {
+    margin: $link-margin;
+    text-decoration: none;
+  }
+
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  img {
+    width: $img-size;
+    height: $img-size;
+    @include transition(transform, 0.3s, ease);
+    @include hover-focus(scale(1.1));
+  }
+}
