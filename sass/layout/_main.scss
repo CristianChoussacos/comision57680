@@ -5,6 +5,7 @@
   @include text-style($font-family, $font-size-large, $text-shadow);
   @include transition(color $transition, text-shadow $transition);
   margin-top: $margin-top-large;
+  background-image: $background-gradient-main1;
 
   img {
     grid-column: 2;
@@ -32,6 +33,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, auto);
+  background-image: $background-gradient-main2;
 
   .p1,
   .p2,
@@ -95,6 +97,10 @@
     text-align: start;
     margin-right: $margin-left-medium;
   }
+}
+
+main {
+  background-image: $background-gradient-main;
 }
 
 .grid-einstein,

@@ -1,6 +1,6 @@
-$background-color: #333;
+$background-color: #000000;
 $text-color: #fff;
-$padding: 20px;
+$padding: 5px;
 $font-size: 1.2em;
 $font-family: "Montserrat", sans-serif;
 $link-margin: 0 10px;
@@ -11,8 +11,14 @@ $font-size-large: 25px;
 $font-size-medium: 20px;
 $text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
 $transition: 0.3s ease;
-$margin-top-large: 100px;
+$margin-top-large: 5px;
 $margin-bottom-large: 200px;
 $margin-left-medium: 30px;
 $img-size-large: 400px;
 $box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+
+
+$background-gradient-main: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+$background-gradient-main1: linear-gradient(to right bottom, #e05760, #d6456c, #c7377a, #b23088, #963094, #814dad, #6563bf, #4475c9, #509bd6, #7ebddd, #b8dce5, #f6f8f8);
+$background-gradient-main2: radial-gradient(circle, #474cb7, #ae40a8, #e94084, #ff645b, #ff9635, #f4ac19, #e1c300, #c6d900, #a7d500, #86d100, #5ecc00, #1cc617);

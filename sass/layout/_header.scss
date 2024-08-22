@@ -1,8 +1,13 @@
-header a {
+header {
+  a {
     text-decoration: none;
   }
-  
-  body header h1 {
+
+  h1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: center;
     padding: 20px;
@@ -11,7 +16,12 @@ header a {
     color: #FFFFFF;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
     margin: 0 auto;
-    width: auto;
     border-radius: 10px;
+    z-index: 1000;
   }
-  
+
+}
+
+body {
+  padding-top: 100px; 
+}

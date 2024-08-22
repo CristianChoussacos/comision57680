@@ -6,14 +6,14 @@
   box-sizing: border-box; }
 
 footer {
-  background-color: #333;
+  background-color: #000000;
   color: #fff;
-  padding: 20px;
+  padding: 5px;
   text-align: center; }
   footer section {
-    margin-bottom: 20px; }
+    margin-bottom: 5px; }
   footer p {
-    margin: 0 0 20px;
+    margin: 0 0 5px;
     font-size: 1.2em;
     font-family: "Montserrat", sans-serif;
     text-align: center; }
@@ -35,7 +35,11 @@ footer {
 header a {
   text-decoration: none; }
 
-body header h1 {
+header h1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: center;
   padding: 20px;
@@ -44,8 +48,11 @@ body header h1 {
   color: #FFFFFF;
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
   margin: 0 auto;
-  width: auto;
-  border-radius: 10px; }
+  border-radius: 10px;
+  z-index: 1000; }
+
+body {
+  padding-top: 100px; }
 
 .main1 {
   display: grid;
@@ -55,7 +62,8 @@ body header h1 {
   font-size: 25px;
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
   transition: color 0.3s ease, text-shadow 0.3s ease;
-  margin-top: 100px; }
+  margin-top: 5px;
+  background-image: linear-gradient(to right bottom, #e05760, #d6456c, #c7377a, #b23088, #963094, #814dad, #6563bf, #4475c9, #509bd6, #7ebddd, #b8dce5, #f6f8f8); }
   .main1 img {
     grid-column: 2;
     grid-row: 1 / 2;
@@ -77,7 +85,8 @@ body header h1 {
 .main2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, auto); }
+  grid-template-rows: repeat(3, auto);
+  background-image: radial-gradient(circle, #474cb7, #ae40a8, #e94084, #ff645b, #ff9635, #f4ac19, #e1c300, #c6d900, #a7d500, #86d100, #5ecc00, #1cc617); }
   .main2 .p1,
   .main2 .p2,
   .main2 .p3 {
@@ -118,7 +127,7 @@ body header h1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 5px;
     margin-bottom: 200px; }
   .main2 .p3 {
     grid-column: 2 / 3;
@@ -129,6 +138,9 @@ body header h1 {
     justify-content: center;
     text-align: start;
     margin-right: 30px; }
+
+main {
+  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); }
 
 .grid-einstein,
 .grid-fleming,
@@ -143,7 +155,7 @@ body header h1 {
   font-size: 25px;
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
   transition: color 0.3s ease, text-shadow 0.3s ease;
-  margin-top: 100px; }
+  margin-top: 5px; }
 
 .grid-einstein img,
 .grid-fleming img,
@@ -197,8 +209,13 @@ section ol li {
   margin-top: 20px; }
 
 nav {
-  padding: 20px;
-  margin-top: 50px; }
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px; }
   nav img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, opacity 0.3s ease; }
@@ -223,7 +240,7 @@ nav {
     text-align: center; }
   .main1 img {
     width: 200px !important;
-    height: 200px !important;
+    height: auto !important;
     margin-bottom: 25px;
     margin-left: 15%; }
   .main1 article {
@@ -248,24 +265,18 @@ nav {
       text-shadow: 5px 5px 10px rgba(235, 229, 229, 0.8);
       color: #9292ad; }
   .main1 {
-    display: flex;
-    flex-direction: column-reverse;
-    text-align: justify;
-    font-size: 16px; }
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    margin-top: 5px !important; }
     .main1 img {
-      display: flex;
-      justify-content: center;
-      align-items: center;
       width: 300px !important;
-      height: 300px !important;
+      height: 300px;
       margin-bottom: 50px;
-      margin-left: 15%; }
+      margin-left: 0 !important; }
     .main1 article {
-      grid-column: 1;
-      grid-row: 1/2;
-      display: flex;
-      flex-direction: row;
-      text-align: left;
       margin-left: 40px;
       margin-right: 40px; }
   .main2 {
@@ -288,13 +299,8 @@ nav {
       height: auto;
       margin-top: 15%;
       margin-left: 30px;
-      display: flex;
-      flex-direction: row;
       justify-content: justify; }
     .main2 .img3 {
-      display: flex;
-      flex-direction: row;
-      justify-content: justify;
       margin-top: 100px;
       margin-bottom: 20px; }
     .main2 .p1, .main2 .p2, .main2 .p3 {
@@ -344,7 +350,7 @@ nav {
     font-size: 20px;
     transition: color 0.3s ease, text-shadow 0.3s ease;
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
-    margin-top: 100px; }
+    margin-top: 5px; }
     .main1 div img {
       width: 400px;
       height: 400px; }
