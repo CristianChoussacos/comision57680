@@ -143,7 +143,7 @@ main {
 section .titulo1,
 section .titulo2 {
   @include text-style($font-family, $font-size-medium, $text-shadow);
-  margin-bottom: 50px;
+  margin-bottom: 5px;
   @include transition(color $transition, text-shadow $transition);
 }
 
@@ -151,7 +151,7 @@ section {
   .titulo1 {
     h2 {
       text-align: center;
-      margin-top: 300px;
+      margin-top: 150px;
     }
   }
 
@@ -170,6 +170,6 @@ section ol li {
   margin-left: $margin-left-medium;
   margin-right: $margin-left-medium;
   @include transition(color $transition, text-shadow $transition);
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
