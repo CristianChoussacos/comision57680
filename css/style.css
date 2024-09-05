@@ -487,8 +487,8 @@ main iframe {
   gap: 20px;
   margin: 100px 0;
   width: 1200px;
-  height: 900px;
-  margin-left: 100px;
+  height: 600px;
+  margin-left: 250px;
   border-radius: 15px;
   box-shadow: 25px 15px 15px black;
   animation: fade-in 2s ease-in-out; }
