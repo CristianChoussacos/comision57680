@@ -139,11 +139,13 @@ section .titulo1 h2 {
 
   .ciencia-en-casa p {
     margin-left: 20px;
+    font-size: $font-size-medium;
   }
 
   main iframe {
     margin-left: 20px;
     width: 80%;
     height: auto;
+    margin-top: 30px;
   }
 }

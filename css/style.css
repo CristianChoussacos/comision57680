@@ -488,7 +488,7 @@ main iframe {
   margin: 100px 0;
   width: 1200px;
   height: 900px;
-  margin-left: 250px;
+  margin-left: 100px;
   border-radius: 15px;
   box-shadow: 25px 15px 15px black;
   animation: fade-in 2s ease-in-out; }
@@ -694,8 +694,8 @@ main iframe {
     font-size: 25px; }
   main iframe {
     margin: 100px 0;
-    width: 350px;
-    height: 300px;
+    width: 80%;
+    height: 80%px;
     margin-left: 30px; }
   footer p {
     text-align: center; } }
@@ -805,8 +805,10 @@ main iframe {
   .ciencia-en-casa {
     margin-top: 0; }
   .ciencia-en-casa p {
-    margin-left: 20px; }
+    margin-left: 20px;
+    font-size: 20px; }
   main iframe {
     margin-left: 20px;
     width: 80%;
-    height: auto; } }
+    height: auto;
+    margin-top: 30px; } }
