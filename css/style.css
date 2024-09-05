@@ -53,17 +53,20 @@
   box-sizing: border-box; }
 
 footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #000000;
   color: #fff;
   padding: 5px;
-  text-align: center; }
+  width: 100%;
+  box-sizing: border-box; }
   footer section {
     margin-bottom: 5px; }
   footer p {
     margin: 0 0 5px;
     font-size: 16px;
-    font-family: "Montserrat", sans-serif;
-    text-align: center; }
+    font-family: "Montserrat", sans-serif; }
   footer a {
     margin: 0 10px;
     text-decoration: none; }
@@ -529,6 +532,9 @@ main iframe {
     height: 300px; }
   .articulo-einstein article {
     margin-top: 50px; }
+  footer {
+    width: 100%;
+    height: auto; }
   .ciencia-en-casa {
     margin-top: 0;
     margin-bottom: 0; }
@@ -715,9 +721,10 @@ main iframe {
     width: 200px;
     height: auto;
     margin-top: 10px; }
-  footer p {
-    font-size: 1em;
-    text-align: center; }
+  footer img {
+    width: 35px;
+    height: auto;
+    margin-top: 10px; }
   .grid-einstein img {
     width: 200px;
     height: auto;
