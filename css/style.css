@@ -219,6 +219,18 @@ nav {
 main {
   background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); }
 
+.grid-einstein {
+  display: flex;
+  justify-content: center;
+  /* Centra horizontalmente */
+  align-items: center;
+  /* Centra verticalmente */ }
+  .grid-einstein img {
+    width: 600px;
+    height: auto;
+    border-radius: 15px;
+    margin-left: 20px; }
+
 section .titulo1,
 section .titulo2 {
   font-family: "Montserrat", sans-serif;
@@ -512,6 +524,11 @@ main iframe {
     font-size: 18px;
     justify-content: left;
     margin-left: 5px; }
+  .grid-einstein img {
+    width: 300px;
+    height: 300px; }
+  .articulo-einstein article {
+    margin-top: 50px; }
   .ciencia-en-casa {
     margin-top: 0;
     margin-bottom: 0; }
@@ -607,6 +624,17 @@ main iframe {
   .p2 p,
   .p1 p {
     text-align: center; }
+  .grid-einstein {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .articulo-einstein article {
+    margin-left: 20px; }
+  section .titulo1 h2 {
+    margin-top: 30px;
+    margin-left: 20px; }
+  section article {
+    margin-left: 10px; }
   section .titulo1, section .titulo2 {
     font-size: 16px; }
   .card {
@@ -642,6 +670,11 @@ main iframe {
     text-align: center;
     margin-right: 30px;
     font-size: 18px; }
+  .grid-einstein img {
+    width: 200px;
+    height: auto;
+    margin-left: 60px;
+    border-radius: 15px; }
   .card {
     width: 200px;
     height: 100px;
@@ -685,6 +718,22 @@ main iframe {
   footer p {
     font-size: 1em;
     text-align: center; }
+  .grid-einstein img {
+    width: 200px;
+    height: auto;
+    margin-left: 60px;
+    border-radius: 15px; }
+  .articulo-einstein article {
+    text-align: center;
+    margin-top: 30px; }
+  section .titulo1 h2 {
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 10px; }
+  .section1 .main1 article {
+    text-align: center;
+    margin-right: 30px;
+    font-size: 18px; }
   .card {
     width: 200px;
     height: 100px;

@@ -61,6 +61,27 @@
     }
 
 
+  .grid-einstein{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .articulo-einstein article {
+    margin-left: 20px;
+  }
+
+  section .titulo1 h2 {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+
+section article {
+  margin-left: 10px;
+}
+
   section {
     .titulo1, .titulo2 {
       font-size: 16px;
