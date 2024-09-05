@@ -85,18 +85,51 @@ section .titulo1 h2 {
     font-size: 18px;
 }
 
-  .card {
-    width: 200px;
-    height: 100px;
+
+.contenedor-tarjeta,
+.contenedor-tarjeta1,
+.contenedor-tarjeta2,
+.card {
+  width: 280px;
+  height: auto;
+  margin-left: 20px;
+}
+
+
+  
+.contenedor-principal .contenedor-padre .contenedor-tarjeta .contenedor-texto p,
+.contenedor-principal .contenedor-padre1 .contenedor-tarjeta1 .contenedor-texto p,
+.contenedor-principal .contenedor-padre2 .contenedor-tarjeta2 .contenedor-texto p
+{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: $font-size-small;
+    
+  }
+
+  .card .back h3  {
+    font-size: $font-size-medium;
+  }
+
+  .face.back ul {
+    font-size: $font-size-small;
+  }
+
+
+  div.card {
+    width: 280px;
+    height: 156.6px;
     flex-direction: column;
   }
 
+
   .card .click {
     position: absolute;
-    width: 80px;
-    height: 80px;
-    bottom: 80px;
-    right: 80px;
+    width: 60px;
+    height: 60px;
+    bottom: 10px;
+    right: 10px;
     z-index: 10;
   }
 

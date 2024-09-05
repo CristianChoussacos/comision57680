@@ -89,11 +89,11 @@ section article {
   }
 
 
-  .card {
-    width: 400px;
+  /*.card {
+    width: 300px;
     height: 150px;
     flex-direction: column;
-  }
+  }*/
 
   .card .click {
     position: absolute;
@@ -101,6 +101,25 @@ section article {
     height: 80px;
     bottom: 80px;
     right: 80px;
+    z-index: 10;
+  }
+
+  .contenedor-tarjeta,
+  .contenedor-tarjeta1,
+  .contenedor-tarjeta2,
+  .card {
+    width: 300px;
+    height: 150px;
+    margin-right: 30px;
+    
+  }
+
+  .card .click {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 10px;
+    right: 10px;
     z-index: 10;
   }
   

@@ -16,11 +16,18 @@
       
       }
 
-    .card {
-        width: 200px;
+
+
+
+     main div .card {
+        width: 100px;
         height: 100px;
         flex-direction: column;
     }
+    .contenedor-tarjeta {
+        width: 280px;
+        height: auto;
+      }
 
     .ciencia-en-casa {
         
