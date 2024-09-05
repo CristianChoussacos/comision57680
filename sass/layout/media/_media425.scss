@@ -1,0 +1,117 @@
+@media (max-width: 426px) {
+  header h1 {
+    font-size: 30px;
+  }
+  
+  
+  
+  .p1, .p2, .p3 {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  .main1 div img{
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .main1{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .main1 article {
+    text-align: center;
+    margin-right: 30px;
+  }
+
+  .main2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .main2 .img1 img {
+    margin-left: 15px;
+    width: 300px;
+    height: auto;
+  }
+
+  .main2 .img2 img {
+    margin-bottom: 30px;
+    width: 200px;
+    height: auto;
+    margin-left: 15px;
+  }
+  
+    .main2 .img3 img {
+      margin-bottom: 30px;
+      width: 200px;
+      height: auto;
+      margin-left: 15px;
+    }
+
+    .p3 p,
+    .p2 p,
+    .p1 p {
+      text-align: center;
+    }
+
+
+  section {
+    .titulo1, .titulo2 {
+      font-size: 16px;
+    }
+  }
+
+
+  .card {
+    width: 400px;
+    height: 150px;
+    flex-direction: column;
+  }
+
+  .card .click {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    bottom: 80px;
+    right: 80px;
+    z-index: 10;
+  }
+  
+
+  .ciencia-en-casa {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .ciencia-en-casa p {
+    width: 80%;
+    height: auto;
+    text-align: center;
+    margin-left: 50px;
+    font-size: 25px;
+}
+
+main iframe {
+  margin: 100px 0;
+  width: 350px;
+  height: 300px;
+  margin-left: 30px;
+ 
+}
+
+
+  footer p {
+    text-align: center;
+  }
+
+
+}
+
+ 
+
+

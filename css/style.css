@@ -1,5 +1,52 @@
 @import url("https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@keyframes text {
+  0% {
+    filter: hue-rotate(0deg); }
+  100% {
+    filter: hue-rotate(360deg); } }
+
+@keyframes fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+/*Animista*/
+.focus-in-contract-bck {
+  -webkit-animation: focus-in-contract-bck 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: focus-in-contract-bck 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@-webkit-keyframes focus-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(300px);
+    transform: translateZ(300px);
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(12px);
+    transform: translateZ(12px);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1; } }
+
+@keyframes focus-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(300px);
+    transform: translateZ(300px);
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(12px);
+    transform: translateZ(12px);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1; } }
+
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +61,7 @@ footer {
     margin-bottom: 5px; }
   footer p {
     margin: 0 0 5px;
-    font-size: 1.2em;
+    font-size: 16px;
     font-family: "Montserrat", sans-serif;
     text-align: center; }
   footer a {
@@ -45,7 +92,12 @@ header h1 {
   padding: 20px;
   font-family: "Love Ya Like A Sister", cursive;
   font-size: 60px;
-  color: #FFFFFF;
+  background: linear-gradient(#1497be, #1c2aec);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  animation: text 5s linear infinite;
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
   margin: 0 auto;
   border-radius: 10px;
@@ -53,6 +105,20 @@ header h1 {
 
 body {
   padding-top: 100px; }
+
+nav {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px; }
+  nav img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, opacity 0.3s ease; }
+    nav img:hover {
+      transform: scale(1.5); }
 
 .main1 {
   display: grid;
@@ -80,7 +146,9 @@ body {
     display: flex;
     flex-direction: row;
     text-align: left;
-    margin-left: 40px; }
+    margin-left: 40px;
+    margin-top: 30px;
+    font-size: 25px; }
 
 .main2 {
   display: grid;
@@ -94,13 +162,15 @@ body {
     font-size: 25px;
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
     transition: color 0.3s ease, text-shadow 0.3s ease; }
-  .main2 .img1 {
+  .main2 .img1 img {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    width: 100%;
+    width: 700px;
     height: auto;
     margin-top: 15%;
-    margin-left: 30px; }
+    margin-left: 30px;
+    border-radius: 15px;
+    margin-right: 40px; }
   .main2 .p1 {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
@@ -109,9 +179,11 @@ body {
     align-items: center;
     justify-content: center;
     margin-right: 30px; }
-  .main2 .img2 {
+  .main2 .img2 img {
     grid-column: 2 / 3;
-    grid-row: 2 / 3; }
+    grid-row: 2 / 3;
+    border-radius: 15px;
+    margin-top: 60px; }
   .main2 .p2 {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
@@ -121,14 +193,19 @@ body {
     align-items: center;
     justify-content: center;
     margin-left: 30px; }
-  .main2 .img3 {
+  .main2 .img3 img {
     grid-column: 1 / 2;
     grid-row: 3 / 4;
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 5px;
-    margin-bottom: 200px; }
+    margin-bottom: 200px;
+    border-radius: 15px;
+    width: 500px;
+    height: auto;
+    margin-left: 30px;
+    margin-right: 20px; }
   .main2 .p3 {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
@@ -141,42 +218,6 @@ body {
 
 main {
   background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); }
-
-.grid-einstein,
-.grid-fleming,
-.grid-galileo,
-.grid-verne {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 25px;
-  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
-  transition: color 0.3s ease, text-shadow 0.3s ease;
-  margin-top: 5px; }
-
-.grid-einstein img,
-.grid-fleming img,
-.grid-galileo img,
-.grid-verne img {
-  width: 400px;
-  height: 400px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-left: 30px;
-  border-radius: 15px; }
-
-.grid-einstein article,
-.grid-fleming article,
-.grid-galileo article,
-.grid-verne article {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: justify;
-  margin: 0 30px; }
 
 section .titulo1,
 section .titulo2 {
@@ -234,137 +275,206 @@ section ol li {
   margin: 10% auto;
   object-fit: contain; }
 
-nav {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px; }
-  nav img {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, opacity 0.3s ease; }
-    nav img:hover {
-      transform: scale(1.5); }
+  justify-content: center; }
+
+.card {
+  position: relative;
+  width: 800px;
+  height: 200px;
+  margin-top: 100px; }
+
+.card .click {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  bottom: 60px;
+  right: 60px;
+  z-index: 10; }
+
+.card .click img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; }
+
+.card .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transition: 0.5s;
+  border-radius: 10px;
+  overflow: hidden; }
+
+.card .front {
+  transform: perspective(600px) rotateX(0deg);
+  box-shadow: 0 5px 10px #000; }
+
+.card .front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute; }
+
+.card .front h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: #000;
+  text-align: center;
+  font-size: 1.875rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
+
+.card .back {
+  transform: perspective(600px) rotateX(180deg);
+  box-shadow: 0 5px 10px #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 15px;
+  box-shadow: 0 5px 10px #000;
+  background-color: #FC77D5;
+  font-size: 20px; }
+
+.card .back h3 {
+  color: #000;
+  font-size: 1.875rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
+
+.face.back ul {
+  list-style-position: inside;
+  margin: 0;
+  padding: 0; }
+
+.face.back li {
+  margin: 0;
+  padding: 0;
+  list-style-type: disc; }
+
+.card:hover .front {
+  transform: perspective(600px) rotateX(180deg); }
+
+.card:hover .back {
+  transform: perspective(600px) rotateX(360deg); }
+
+.contenedor-principal {
+  margin-top: 100px;
+  object-fit: contain;
+  margin-bottom: 100px; }
+
+.contenedor-principal .contenedor-texto {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  align-items: center !important;
+  text-align: none; }
+
+.contenedor-tarjeta {
+  width: 400px;
+  height: 150px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  box-shadow: 5px 5px 50px #888888;
+  background-color: #FFCC3B; }
+
+.contenedor-tarjeta img {
+  width: 35%;
+  height: 80%;
+  object-fit: contain;
+  border-right: 2.5px solid black; }
+
+.contenedor-tarjeta1 {
+  width: 400px;
+  height: 150px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  box-shadow: 5px 5px 50px #888888;
+  background-color: #F9650D;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.contenedor-tarjeta1 img {
+  width: 35%;
+  height: 80%;
+  object-fit: contain;
+  border-right: 2.5px solid black; }
+
+.contenedor-tarjeta2 {
+  width: 400px;
+  height: 150px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  box-shadow: 5px 5px 50px #888888;
+  background-color: #4562EB; }
+
+.contenedor-tarjeta2 img {
+  width: 35%;
+  height: 80%;
+  object-fit: contain;
+  border-right: 2.5px solid black; }
+
+.ciencia-en-casa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 0;
+  margin-bottom: 0; }
+
+.ciencia-en-casa h1 {
+  font-family: "Love Ya Like A Sister", cursive;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  color: #000000;
+  line-height: 1.2;
+  font-weight: bold; }
+
+.ciencia-en-casa h2 {
+  font-family: "Love Ya Like A Sister", cursive;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 15px;
+  color: #000000;
+  line-height: 1.3;
+  font-weight: normal; }
+
+.ciencia-en-casa p {
+  width: 80%;
+  height: auto;
+  text-align: center;
+  margin-left: 200px;
+  font-size: 25px; }
+
+main iframe {
+  gap: 20px;
+  margin: 100px 0;
+  width: 1200px;
+  height: 900px;
+  margin-left: 250px;
+  border-radius: 15px;
+  box-shadow: 25px 15px 15px black;
+  animation: fade-in 2s ease-in-out; }
 
 .section1 {
   background-color: #55476A; }
 
 .section2 {
   background-color: #F2CA7E; }
-
-@media (max-width: 320px) {
-  body header h1 {
-    font-size: 20px; }
-  .barra-nav img {
-    width: 80px;
-    height: auto;
-    align-content: center;
-    margin-top: 5px; }
-  .barra-nav p {
-    text-align: center; }
-  .main1 img {
-    width: 200px !important;
-    height: auto !important;
-    margin-bottom: 25px;
-    margin-left: 15%; }
-  .main1 article {
-    text-align: center; }
-  footer p {
-    font-size: 1em;
-    text-align: center; } }
-
-@media (max-width: 426px) {
-  body header h1 {
-    font-size: 30px; }
-  .barra-nav {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
-    background-color: transparent;
-    justify-items: center; }
-    .barra-nav button {
-      background-color: transparent; }
-    .barra-nav p {
-      text-align: justify;
-      text-shadow: 5px 5px 10px rgba(235, 229, 229, 0.8);
-      color: #9292ad; }
-  .main1 {
-    display: flex !important;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-    margin-top: 5px !important; }
-    .main1 img {
-      width: 300px !important;
-      height: 300px;
-      margin-bottom: 50px;
-      margin-left: 0 !important; }
-    .main1 article {
-      margin-left: 40px;
-      margin-right: 40px; }
-  .main2 {
-    display: flex;
-    flex-direction: column;
-    text-align: center; }
-    .main2 .p1, .main2 .p2, .main2 .p3 {
-      margin-left: 30px;
-      font-size: 16px; }
-    .main2 .img1 {
-      width: 100%;
-      height: auto;
-      margin-top: 15%;
-      margin-left: 30px;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start; }
-    .main2 .img2 {
-      width: 100%;
-      height: auto;
-      margin-top: 15%;
-      margin-left: 30px;
-      justify-content: justify; }
-    .main2 .img3 {
-      margin-top: 100px;
-      margin-bottom: 20px; }
-    .main2 .p1, .main2 .p2, .main2 .p3 {
-      margin-top: 20px;
-      margin-bottom: 50px; }
-  .grid-einstein, .grid-fleming, .grid-galileo, .grid-verne {
-    font-size: 16px; }
-  section .titulo1, section .titulo2 {
-    font-size: 16px; }
-  footer p {
-    text-align: center; } }
-
-@media (max-width: 768px) {
-  .grid-einstein,
-  .grid-fleming,
-  .grid-galileo,
-  .grid-verne {
-    font-size: 20px;
-    flex-direction: column; }
-    .grid-einstein img,
-    .grid-fleming img,
-    .grid-galileo img,
-    .grid-verne img {
-      width: 300px;
-      height: 300px;
-      margin-top: 100px;
-      border-radius: 15px; }
-  section .titulo1 h2 {
-    text-align: center;
-    margin-top: 200px; }
-  section .titulo2 {
-    margin-top: 50px;
-    margin-left: 30px; }
-  section p,
-  section article,
-  section h3,
-  section ol li {
-    font-size: 18px; } }
 
 @media (max-width: 1024px) {
   body {
@@ -378,14 +488,219 @@ nav {
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
     margin-top: 5px; }
     .main1 div img {
-      width: 400px;
-      height: 400px; }
+      width: 300px;
+      height: 300px; }
     .main1 article {
       margin-bottom: 100px; }
-  .main2 div img {
-    width: 80%;
+  .main2 .img1 img {
+    width: 400px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 15px; }
+  .img2 img {
+    width: 400px;
+    height: auto;
+    border-radius: 15px; }
+  .main2 .img3 img {
+    width: 400px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 15px; }
+  .p1 p,
+  .p2 p,
+  .p3 p {
+    font-size: 18px;
+    justify-content: left;
+    margin-left: 5px; }
+  .ciencia-en-casa {
+    margin-top: 0;
+    margin-bottom: 0; }
+  .ciencia-en-casa p {
+    margin-left: 70px; }
+  main iframe {
+    margin: 100px 0;
+    width: 900px;
+    height: 600px;
+    margin-left: 80px; } }
+
+@media (max-width: 768px) {
+  .main1 div img {
+    width: 250px;
     height: auto; }
-  .main2 .p1,
-  .main2 .p2,
-  .main2 .p3 {
-    font-size: 20px; } }
+  .main2 .img1 img {
+    width: 300px;
+    height: auto;
+    margin-right: 2px;
+    border-radius: 15px; }
+  .main2 .img2 img {
+    width: 300px;
+    height: auto;
+    border-radius: 15px; }
+  .main2 .img3 img {
+    width: 300px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 15px; }
+  section .titulo1 h2 {
+    text-align: center;
+    margin-top: 200px; }
+  section .titulo2 {
+    margin-top: 50px;
+    margin-left: 30px; }
+  section p,
+  section article,
+  section h3,
+  section ol li {
+    font-size: 18px; }
+  .card {
+    width: 600px;
+    height: 150px;
+    flex-direction: column; }
+  .ciencia-en-casa {
+    margin-top: 0;
+    margin-bottom: 0; }
+  .ciencia-en-casa p {
+    margin-left: 70px; }
+  main iframe {
+    margin: 100px 0;
+    width: 600px;
+    height: 400px;
+    margin-left: 80px; } }
+
+@media (max-width: 426px) {
+  header h1 {
+    font-size: 30px; }
+  .p1, .p2, .p3 {
+    margin-top: 20px;
+    margin-bottom: 50px; }
+  .main1 div img {
+    margin-bottom: 20px;
+    margin-top: 20px; }
+  .main1 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20px; }
+  .main1 article {
+    text-align: center;
+    margin-right: 30px; }
+  .main2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; }
+  .main2 .img1 img {
+    margin-left: 15px;
+    width: 300px;
+    height: auto; }
+  .main2 .img2 img {
+    margin-bottom: 30px;
+    width: 200px;
+    height: auto;
+    margin-left: 15px; }
+  .main2 .img3 img {
+    margin-bottom: 30px;
+    width: 200px;
+    height: auto;
+    margin-left: 15px; }
+  .p3 p,
+  .p2 p,
+  .p1 p {
+    text-align: center; }
+  section .titulo1, section .titulo2 {
+    font-size: 16px; }
+  .card {
+    width: 400px;
+    height: 150px;
+    flex-direction: column; }
+  .card .click {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    bottom: 80px;
+    right: 80px;
+    z-index: 10; }
+  .ciencia-en-casa {
+    margin-top: 0;
+    margin-bottom: 0; }
+  .ciencia-en-casa p {
+    width: 80%;
+    height: auto;
+    text-align: center;
+    margin-left: 50px;
+    font-size: 25px; }
+  main iframe {
+    margin: 100px 0;
+    width: 350px;
+    height: 300px;
+    margin-left: 30px; }
+  footer p {
+    text-align: center; } }
+
+@media (max-width: 375px) {
+  .section1 .main1 article {
+    text-align: center;
+    margin-right: 30px;
+    font-size: 18px; }
+  .card {
+    width: 200px;
+    height: 100px;
+    flex-direction: column; }
+  .ciencia-en-casa {
+    margin-top: 0; }
+  .main2 .img2 img {
+    width: 200px;
+    height: auto;
+    margin-right: 40px; } }
+
+@media (max-width: 320px) {
+  body header h1 {
+    font-size: 25px; }
+  .barra-nav img {
+    width: 80px;
+    height: auto;
+    align-content: center;
+    margin-top: 5px; }
+  .barra-nav p {
+    text-align: center; }
+  .main1 img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 25px;
+    margin-left: 15px; }
+  .main1 article {
+    text-align: center; }
+  .main2 .img1 img {
+    width: 200px;
+    height: auto;
+    margin-right: 20px; }
+  .main2 .img2 img {
+    width: 200px;
+    height: auto;
+    margin-right: 40px; }
+  .main2 .img3 img {
+    width: 200px;
+    height: auto;
+    margin-top: 10px; }
+  footer p {
+    font-size: 1em;
+    text-align: center; }
+  .card {
+    width: 200px;
+    height: 100px;
+    flex-direction: column; }
+  .card .click {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    bottom: 80px;
+    right: 80px;
+    z-index: 10; }
+  .ciencia-en-casa {
+    margin-top: 0; }
+  .ciencia-en-casa p {
+    margin-left: 20px; }
+  main iframe {
+    margin-left: 20px;
+    width: 80%;
+    height: auto; } }

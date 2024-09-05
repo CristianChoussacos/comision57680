@@ -13,7 +13,13 @@ header {
     padding: 20px;
     font-family: "Love Ya Like A Sister", cursive;
     font-size: 60px;
-    color: #FFFFFF;
+    background: linear-gradient(#1497be, #1c2aec);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    animation: text 5s linear infinite;
+
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
     margin: 0 auto;
     border-radius: 10px;

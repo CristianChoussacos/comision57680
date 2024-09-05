@@ -1,0 +1,28 @@
+@media (max-width: 375px) 
+{
+
+   .section1 .main1 article {
+        text-align: center;
+        margin-right: 30px;
+        font-size: 18px;
+    }
+
+    .card {
+        width: 200px;
+        height: 100px;
+        flex-direction: column;
+    }
+
+    .ciencia-en-casa {
+        
+        margin-top: 0;
+    }
+
+    .main2 .img2 img  {
+        width: 200px;
+        height: auto;
+        margin-right: 40px;
+    }
+        
+
+}

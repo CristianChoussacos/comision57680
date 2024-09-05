@@ -14,8 +14,8 @@
 
         div {
             img {
-                width: 400px;
-                height: 400px;
+                width: 300px;
+                height: 300px;
             }
         }
 
@@ -24,18 +24,47 @@
         }
     }
 
-    .main2 {
-        div {
-            img {
-                width: 80%;
-                height: auto;
-            }
-        }
+    .main2 .img1 img {
+        width: 400px;
+        height: auto;
+        margin-right: 20px;
+        border-radius: 15px;
+    }
 
-        .p1,
-        .p2,
-        .p3 {
-            font-size: 20px;
-        }
+    .img2 img {
+        width: 400px;
+        height: auto;
+        border-radius: 15px;
+    }
+
+    .main2 .img3 img {
+        width: 400px;
+        height: auto;
+        margin-top: 10px;
+        border-radius: 15px;
+    }
+
+    .p1 p,
+    .p2 p,
+    .p3 p {
+        font-size: 18px;
+        justify-content: left;
+        margin-left: 5px;
+    }
+
+    .ciencia-en-casa {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .ciencia-en-casa p {
+        margin-left: 70px;
+    }
+
+    main iframe {
+        margin: 100px 0;
+        width: 900px;
+        height: 600px;
+        margin-left: 80px;
     }
 }

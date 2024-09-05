@@ -1,18 +1,29 @@
 @media (max-width: 768px) {
-    .grid-einstein,
-    .grid-fleming,
-    .grid-galileo,
-    .grid-verne {
-        font-size: 20px;
-        flex-direction: column;
+   
+.main1 div img {
+width: 250px;
+height: auto;
+}
 
-        img {
-            width: 300px;
-            height: 300px;
-            margin-top: 100px;
-            border-radius: 15px;
-        }
-    }
+.main2 .img1 img {
+    width: 300px;
+    height: auto;
+    margin-right: 2px;
+    border-radius: 15px;
+}
+
+.main2 .img2 img {
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.main2 .img3 img { 
+    width: 300px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 15px;
+}
 
     section {
         .titulo1 {
@@ -34,4 +45,31 @@
             font-size: 18px;
         }
     }
+
+
+    .card {
+        width: 600px;
+        height: 150px;
+        flex-direction: column;
+    }
+
+    .ciencia-en-casa {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .ciencia-en-casa p{
+        margin-left: 70px;
+
+    }
+
+    main iframe{
+        margin: 100px 0;
+        width: 600px;
+        height: 400px;
+        margin-left: 80px;
+
+
+    }
+
+   
 }

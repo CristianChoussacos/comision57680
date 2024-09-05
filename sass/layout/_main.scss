@@ -8,6 +8,7 @@
   @include transition(color $transition, text-shadow $transition);
   margin-top: $margin-top-large;
   background-image: $background-gradient-main1;
+  
 
   img {
     grid-column: 2;
@@ -29,6 +30,9 @@
     flex-direction: row;
     text-align: left;
     margin-left: 40px;
+    margin-top: 30px;
+    font-size: $font-size-large;
+   
   }
 }
 
@@ -45,13 +49,16 @@
     @include transition(color $transition, text-shadow $transition);
   }
 
-  .img1 {
+  .img1 img{
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    width: 100%;
+    width: 700px;
     height: auto;
     margin-top: 15%;
     margin-left: $margin-left-medium;
+    border-radius: 15px;
+    margin-right: 40px;
+
   }
 
   .p1 {
@@ -64,9 +71,11 @@
     margin-right: $margin-left-medium;
   }
 
-  .img2 {
+  .img2 img{
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    border-radius: 15px;
+    margin-top: 60px;
   }
 
   .p2 {
@@ -80,7 +89,7 @@
     margin-left: $margin-left-medium;
   }
 
-  .img3 {
+   .img3 img{
     grid-column: 1 / 2;
     grid-row: 3 / 4;
     display: flex;
@@ -88,6 +97,11 @@
     justify-content: center;
     margin-top: $margin-top-large;
     margin-bottom: $margin-bottom-large;
+    border-radius: 15px;
+    width: 500px;
+    height: auto;
+    margin-left: 30px;
+    margin-right: 20px;
   }
 
   .p3 {
@@ -106,42 +120,7 @@ main {
   background-image: $background-gradient-main;
 }
 
-.grid-einstein,
-.grid-fleming,
-.grid-galileo,
-.grid-verne {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-  @include text-style($font-family, $font-size-large, $text-shadow);
-  @include transition(color $transition, text-shadow $transition);
-  margin-top: $margin-top-large;
-}
 
-.grid-einstein img,
-.grid-fleming img,
-.grid-galileo img,
-.grid-verne img {
-  width: $img-size-large;
-  height: $img-size-large;
-  @include box-shadow($box-shadow);
-  @include transition(transform $transition, box-shadow $transition);
-  margin-left: $margin-left-medium;
-  border-radius: 15px;
-}
-
-.grid-einstein article,
-.grid-fleming article,
-.grid-galileo article,
-.grid-verne article {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: justify;
-  margin: 0 $margin-left-medium;
-}
 
 section .titulo1,
 section .titulo2 {
@@ -207,3 +186,257 @@ section ol li {
   object-fit: contain;
 }
 
+
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  width: 800px;
+  height: 200px;
+  margin-top: 100px;
+
+}
+
+.card .click {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  bottom: 60px;
+  right: 60px;
+  z-index: 10;
+
+
+}
+
+.card .click img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.card .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transition: 0.5s;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card .front {
+  transform: perspective(600px) rotateX(0deg);
+  box-shadow: 0 5px 10px #000;
+
+}
+
+.card .front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute
+}
+
+.card .front h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: #000;
+  text-align: center;
+  font-size: 1.875rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  
+}
+
+.card .back {
+  transform: perspective(600px) rotateX(180deg);
+  box-shadow: 0 5px 10px #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 15px;
+  box-shadow: 0 5px 10px #000;
+  background-color: #FC77D5;
+  font-size: 20px;
+}
+
+.card .back h3 {
+  color: #000;
+  font-size: 1.875rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.face.back ul {
+  list-style-position: inside; 
+  margin: 0; 
+  padding: 0; 
+}
+
+.face.back li {
+  margin: 0; 
+  padding: 0; 
+  list-style-type: disc; 
+}
+.card:hover .front {
+  transform: perspective(600px) rotateX(180deg);
+}
+
+.card:hover .back {
+  transform: perspective(600px) rotateX(360deg);
+}
+
+.contenedor-principal {
+  margin-top: 100px;
+  object-fit: contain;
+  margin-bottom: 100px;
+
+}
+
+.contenedor-principal .contenedor-texto {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: $font-size;
+  align-items: center!important;
+  text-align: none;
+
+  
+}
+
+
+
+.contenedor-tarjeta {
+  width: 400px;
+  height: 150px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  box-shadow: 5px 5px 50px #888888;
+  background-color: #FFCC3B;
+
+}
+
+
+
+
+
+.contenedor-tarjeta img {
+  width: 35%;
+  height: 80%;
+  object-fit: contain;
+  border-right: 2.5px solid black;
+}
+
+
+
+.contenedor-tarjeta1 {
+  width: 400px;
+  height: 150px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  box-shadow: 5px 5px 50px #888888;
+  background-color: #F9650D;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+}
+
+.contenedor-tarjeta1 img {
+  width: 35%;
+  height: 80%;
+  object-fit: contain;
+  border-right: 2.5px solid black;
+}
+
+
+
+.contenedor-tarjeta2 {
+  width: 400px;
+  height: 150px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  box-shadow: 5px 5px 50px #888888;
+  background-color: #4562EB;
+
+}
+
+
+
+.contenedor-tarjeta2 img {
+  width: 35%;
+  height: 80%;
+  object-fit: contain;
+  border-right: 2.5px solid black;
+}
+
+
+.ciencia-en-casa{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+.ciencia-en-casa h1 {
+  font-family: $font-family-title;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 20px; // Nuevo margen inferior
+  color: #000000; // Nuevo color
+  line-height: 1.2; // Nueva altura de línea
+  font-weight: bold; // Nuevo peso de fuente
+}
+
+.ciencia-en-casa h2 {
+  font-family: $font-family-title;
+  font-size: $font-size-large;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 15px; // Nuevo margen inferior
+  color: #000000; // Nuevo color
+  line-height: 1.3; // Nueva altura de línea
+  font-weight: normal; // Nuevo peso de fuente
+}
+
+.ciencia-en-casa p{
+  width: 80%;
+  height: auto; 
+  text-align: center;
+  margin-left: 200px;
+  font-size: $font-size-large;
+  
+}
+
+
+
+ main iframe {
+  
+
+ 
+  gap: 20px;
+  margin: 100px 0; 
+  width: 1200px;
+  height: 900px;
+margin-left: 250px;
+border-radius: 15px;
+  box-shadow: 25px 15px 15px rgba(0, 0, 0, 1);
+  animation: fade-in 2s ease-in-out;
+}
